@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WWDC BINGO</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            height: 100%;
+            background: url(assets/img/back.png);
+        }
+
+        div {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8rem;
+            height: 8rem;
+            margin: 2rem;
+            text-align: center;
+            padding: 1rem;
+            flex-grow: 1;
+            background-color: #eaebef;
+            border-radius: 2rem;
+            -webkit-box-shadow: 10px 10px 69px -20px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 69px -20px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 69px -20px rgba(0, 0, 0, 0.75);
+            animation: out;
+            animation-duration: .6s;
+        }
+
+        div:hover,
+        .selected {
+            background: #a5a6a8;
+            text-decoration: line-through;
+            animation: hover;
+            animation-duration: .2s;
+            transition: .5s;
+            transform: scale(1.1);
+        }
+
+        @keyframes hover {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes out {
+            from {
+                transform: scale(1.1);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        main {
+            max-width: 72rem;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            color: #828282;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> WWDC BINGO</h1>
+    <main>
+        <div>
+            <p>Performance</p>
+        </div>
+        <div>
+            <p>AppKit</p>
+        </div>
+        <div>
+            <p>ARKit 2</p>
+        </div>
+        <div>
+            <p>Horizontal face id</p>
+        </div>
+        <div>
+            <p>Files Update</p>
+        </div>
+        <div>
+            <p>Shazam integrate</p>
+        </div>
+        <div>
+            <p>Swift 5</p>
+        </div>
+        <div>
+            <p>Animoji</p>
+        </div>
+        <div>
+            <p>Goooood morning</p>
+        </div>
+        <div>
+            <p>Sleeptracking</p>
+        </div>
+        <div>
+            <p>Dark mode</p>
+        </div>
+        <div>
+            <p>Workflow</p>
+        </div>
+        <div>
+            <p>The best since...</p>
+        </div>
+        <div>
+            <p>iPhone SE 2</p>
+        </div>
+        <div>
+            <p>Later this year</p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
